@@ -101,7 +101,13 @@ h2{
 
 /* skill */
 #box2{
-    padding: 2% 15%;}
+    padding: 2% 15%;
+}
+@media only screen and (max-width:768px) {
+    #box2{
+        padding: 50px 40px;
+    }
+}
 #box2 ul{
     flex-wrap:wrap;
     justify-content: center;
@@ -213,12 +219,24 @@ background-color: #fff;
     justify-content: center;
     flex-wrap: wrap;
 }
+@media only screen and (max-width:768px) {
+    #box5 .flow-list{
+        flex-direction: column;
+    }
+}
 #box5 .flow-list li{
 width: 40%;
 background-color: rgba(5,50,60,0.6);
 margin: 2%;
 border-radius: 10px;
 padding: 10px;
+}
+@media only screen and (max-width:768px) {
+    #box5 .flow-list li{
+        width: 100%;
+        margin: 2% 0;
+        padding: 8px;
+        }
 }
 .step-detail{
     margin-top: 2%;
